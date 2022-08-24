@@ -31,7 +31,8 @@ def make_recipe():
             'name': fake.word()
         },
         'cover': {
-            'url': 'https://loremflickr.com/%s/%s/food,cook' % rand_ratio(),
+            # 'url': 'https://loremflickr.com/%s/%s/food,cook' % rand_ratio(),
+            # 'url': 'https://placeimg.com/640/480/any' % rand_ratio(),
         }
     }
 
