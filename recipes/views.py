@@ -1,5 +1,7 @@
 from django.shortcuts import get_list_or_404, get_object_or_404, render
+
 from recipes.models import Recipe
+
 # from django.http import Http404
 
 
@@ -7,7 +9,6 @@ def home(request):
     recipes = Recipe.objects.filter(
         is_published=True,
     ).order_by('-id')
-    
     return render(request, 'recipes/pages/home.html', context={
         'recipes': recipes,
     })
